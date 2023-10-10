@@ -111,6 +111,7 @@ class TestCheckSession:
             response = client.get('/check_session')
             response_json = response.json
 
+
             assert response_json['id'] == 1
             assert response_json['username']
 
